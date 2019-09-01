@@ -1,0 +1,261 @@
+
+html {
+    height: 100%;
+    background: radial-gradient(circle, #DCD7DB, #9DD2EA);
+}
+
+#contaner {
+    height: 550px;
+    width: 600px;
+    background-color: #DCD7DB;
+    margin: 110px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px #c4bec3;
+    -webkit-box-shadow: 5px 5px 10px 0px #c4bec3;
+    -moz-box-shadow: 5px 5px 10px 0px #c4bec3;
+}
+
+#score {
+    float: right;
+    color: white;
+    background-color: blue;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    font-family: cursive, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 18px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 3px 0px #9DD2EA;
+    -webkit-box-shadow: 0px 5px 3px 0px #9DD2EA;
+    -moz-box-shadow: 0px 5px 3px 0px #9DD2EA;
+    display: none;
+}
+
+#correct {
+    width: 90px;
+    height: 30px;
+    margin: auto;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    font-family: cursive, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 22px;
+    display: none;
+}
+
+#wrong {
+    width: 120px;
+    height: 30px;
+    margin: auto;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    font-family: cursive, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 22px;
+    display: none;
+}
+#question {
+    width: 400px;
+    height: 150px;
+    background-color: #5a5b5b;
+    margin: 60px auto 10px auto;
+    box-shadow: 0px 5px 3px 0px #474647; 
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+    border-radius: 10px;
+    display: none;
+}
+
+#choose {
+    width: 400px;
+    height: 75px;
+    background-color: #a0a0a0;
+    margin: 0px auto 10px auto;
+    box-shadow: 0px 5px 3px 0px #474647;
+    -moz-box-shadow: 0px 5px 3px 0px #474647;
+    -webkit-box-shadow: 0px 5px 3px 0px #474647;
+    font-size: 25px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+    line-height: 70px;
+    border-radius: 10px;
+    display: none;
+}
+
+#choices {
+    width: 400px;
+    height: 100px;
+    margin: 5px auto;
+    display: none;
+}
+
+.box {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    box-shadow: 0px 5px 3px 0px #474647;
+    -webkit-box-shadow: 0px 5px 3px 0px #474647;
+    -moz-box-shadow: 0px 5px 3px 0px #474647;
+    float: left;
+    margin-right: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: cursive, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    line-height: 85px;
+    color: black;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.box:hover{
+    background-color: cornflowerblue;
+    color: white;
+    box-shadow: 0px 5px 3px 0px #000;
+    -webkit-box-shadow: 0px 5px 3px 0px #000;
+    -moz-box-shadow: 0px 5px 3px 0px #000;
+}
+
+.box:active {
+    box-shadow: 0px 0px #000;
+    -webkit-box-shadow: 0px 0px #000;
+    -moz-box-shadow: 0px 0px #000;
+    top: 5px;
+    z-index: 0;
+}
+
+#box4 {
+    margin-right: 0;
+}
+
+#start-quiz {
+    width: 150px;
+    height: 50px;
+    background-color: #3fb703;
+    box-shadow: 0px 5px 3px 0px #474647;
+    -webkit-box-shadow: 0px 5px 3px 0px #474647;
+    -moz-box-shadow: 0px 5px 3px 0px #474647;
+    margin: 5px auto 5px auto;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: cursive, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    color: black;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    display: none;
+}
+
+#start-quiz:hover{
+    background-color: #DCD7DB;
+    color: black;
+    box-shadow: 0px 5px 3px 0px #000;
+    -webkit-box-shadow: 0px 5px 3px 0px #000;
+    -moz-box-shadow: 0px 5px 3px 0px #000;
+}
+
+#start-quiz:active {
+    box-shadow: 0px 0px #000;
+    -webkit-box-shadow: 0px 0px #000;
+    -moz-box-shadow: 0px 0px #000;
+    top: 5px;
+}
+
+#time-remainig {
+    float: right;
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    box-shadow: 0px 5px 3px 0px #474647;
+    -moz-box-shadow: 0px 5px 3px 0px #474647;
+    -webkit-box-shadow: 0px 5px 3px 0px #474647;
+    font-size: 18px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: white;
+    line-height: 50px;
+    border-radius: 10px;
+    display: none;
+}
+
+#game-over {
+    position: relative;
+    left: 10px;
+    margin: -300px auto;
+    width: 450px;
+    height: 200px;
+    background: radial-gradient(circle, #DCD7DB, #9DD2EA);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    text-transform: uppercase;
+    line-height: 40px;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: 0px 5px 3px 0px #474647;
+    -moz-box-shadow: 0px 5px 3px 0px #474647;
+    -webkit-box-shadow: 0px 5px 3px 0px #474647;
+    display: block;
+}
+.operation {
+    width: 150px;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 5px 3px 0px #474647;
+    -webkit-box-shadow: 0px 5px 3px 0px #474647;
+    -moz-box-shadow: 0px 5px 3px 0px #474647;
+    margin: 20px auto;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: cursive, sans-serif;
+    text-align: center;
+    font-size: 21px;
+    line-height: 80px;
+    color: black;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.operation:hover{
+    background-color: #DCD7DB;
+    color: black;
+    box-shadow: 0px 5px 3px 0px #000;
+    -webkit-box-shadow: 0px 5px 3px 0px #000;
+    -moz-box-shadow: 0px 5px 3px 0px #000;
+}
+
+.operation:active {
+    box-shadow: 0px 0px #000;
+    -webkit-box-shadow: 0px 0px #000;
+    -moz-box-shadow: 0px 0px #000;
+    top: 5px;
+}
+#operations {
+    display: block;
+}
